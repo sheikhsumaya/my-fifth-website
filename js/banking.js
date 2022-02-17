@@ -9,14 +9,6 @@ document.getElementById('calculate-button').addEventListener
     
         // food 
 
-        // const depositInput = document.getElementById('deposit-input');
-        // const newDepositAmountText = depositInput.value;
-        // const newDepositAmount = parseFloat(newDepositAmountText)
-        // const depositTotal = document.getElementById('deposit-total');
-        // const previousDepositText = depositTotal.innerText;
-        // const previousDepositAmount = parseFloat(previousDepositText )
-        // const newDepositTotal = previousDepositAmount + newDepositAmount;
-        // depositTotal.innerText = newDepositTotal;
 
 
 
@@ -47,11 +39,13 @@ document.getElementById('calculate-button').addEventListener
 
         // total calculate 
     const totalInput = document.getElementById('expenses-total');
-    const finalTotal = finalFood + finalRent + finalClothes;
-    const finalTotalText = finalTotal.value;
-    const newFinalTotal = parseFloat(finalTotalText);
-    totalInput.value = newFinalTotal;
+    const totalText = totalInput.innerText;
+    const newFinalTotal = parseFloat(totalText);
+    totalInput.innerText = newFinalTotal;
+    // newFinalTotal = foodInput + rentInput + clothesInput;
     console.log(newFinalTotal);
+
+
     
 
 
