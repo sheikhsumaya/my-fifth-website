@@ -33,46 +33,46 @@
     <main>
 
         <section>
-            <div class="container px-4 d-flex justify-content-center">
-                <div class="row gx-5">
+            <div class="container d-flex justify-content-center">
+                <div class="row">
                      <!-- img site  -->
-                  <div class="col">
-                  <img class=" img-fluid" src="images/Mudaraba-Savings-Account_0_1440x850.jpg" alt="">
+                  <div class="col-6">
+                  <img class="border-2 img img-fluid" src="images/Mudaraba-Savings-Account_0_1440x850.jpg" alt="">
                   </div>
                   <div class="col text-center">
-                    <div class="p-3 border bg-light">
+                    <div class="p-3 border">
                         <!-- income site  -->
                      <div>
                     <h2 class="ps-3">Income</h2>
                      <p class="ps-3 mt-4">Income :
-                    <input type="text bg-secondary ms-3"></p>
+                    <input id="income-input" placeholder="$ Enter Income Amount" type="text ms-3"></p>
                      </div>
                         <!-- Expenses site  -->
                         <div>
                             <h2 class="ps-3">Expenses</h2>
                              <p class="ps-3 mt-4">Food :
-                            <input type="text bg-secondary ms-3"></p>
+                            <input  id="food-input" placeholder="$ Enter Food Amount" type="text  ms-3"></p>
                              <p class="ps-3 mt-4">Rent: 
-                            <input type="text bg-secondary ms-3"></p>
+                            <input id="rent-input"  placeholder="$ Enter Rent Amount" type="text ms-3"></p>
                              <p class="ps-3 mt-4"> Clothes: 
-                            <input type="text bg-secondary ms-3"></p>
+                            <input id="clothes-input"  placeholder="$ Enter Clothes Amount" type="text ms-3"></p>
                         </div>
                         <!-- calculate button  -->
-                        <button type="button" class="btn btn-primary">Calculate</button>
+                        <button id="calculate-button" type="button" class="btn">Calculate</button>
                         <!-- total part  -->
                         <div>
-                            <h3 class="mt-4">Total Expenses:  $<span>5500</span></h3> 
-                            <h3 class="mt-4">Balance:  $<span>4500</span></h3>
+                            <h3 class="mt-4">Total Expenses:  $<span id="expenses-total">100</span></h3> 
+                            <h3 class="mt-4">Balance:  $<span id="balance-input">4500</span></h3>
                         </div>
                         <!-- saving part  -->
                         <div class="d-flex flex-row bd-highlight justify-content-center m-1">
                             <div class="p-2  mt-4 bd-highlight"> <p> Clothes: 
-                                <input type="text bg-secondary ms-3"></p></div>
+                                <input placeholder="$ Saving" type="text ms-3"></p></div>
                             <div class="p-2  mt-4 bd-highlight">
                                     %
                             </div>
                             <div class="p-2  mt-4 bd-highlight">
-                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn">Save</button>
                             </div>
                           </div>
                         <!-- total saving part  -->
@@ -87,5 +87,6 @@
         </section>
     </main>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/banking.js"></script>
 </body>
 </html>

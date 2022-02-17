@@ -3,12 +3,33 @@ header{
     text-align: center;
     margin: 5%;
     font-family: 'Anton', sans-serif;
+    color: darkgreen;
 
 }
 body{
     font-family: 'Akaya Telivigala', cursive;
+    color: darkcyan;
 }
 header img {
     width: 50px;
     height: 70px;
+}
+
+.img{
+    position: relative;
+    width: 1920px;
+    height: 730px;
+}
+.btn{
+    color: rgb(248, 252, 247);
+    background-color: rgba(101, 122, 79, 0.555);
+}
+
+@media only screen and (max-width: 688px) {
+
+    .img{
+        padding-left: 30px;
+        height:300px;
+        width:300px;
+    }
 }
