@@ -10,7 +10,7 @@ function getTotalCalculation(incomeId, foodId, rentId, clothesId, totalInputId){
         alert("Please enter a positive number!! ");
     }
     
-    console.log(incomeInput);
+   
     incomeInputId.value = '';
 
     // food
@@ -23,7 +23,7 @@ function getTotalCalculation(incomeId, foodId, rentId, clothesId, totalInputId){
     else if(finalFood < 0){
         alert("Please enter a positive number!! ");
     }
-    console.log(finalFood);
+    
     foodInput.value = '';
 
     // rent
@@ -36,7 +36,7 @@ function getTotalCalculation(incomeId, foodId, rentId, clothesId, totalInputId){
     else if(finalRent < 0){
         alert("Please enter a positive number!! ");
     }
-    console.log(finalRent);
+    
     rentInput.value = '';
 
     // clothes
@@ -49,7 +49,7 @@ function getTotalCalculation(incomeId, foodId, rentId, clothesId, totalInputId){
     else if(finalclothes < 0){
         alert("Please enter a positive number!! ");
     }
-    console.log(finalclothes);
+   
     clothesInput.value = '';
     
     // total
@@ -59,7 +59,7 @@ function getTotalCalculation(incomeId, foodId, rentId, clothesId, totalInputId){
         const finalTotal = incomeInput - finalFood - finalRent - finalclothes;
         totalInput.innerText = finalTotal;
     }
-    console.log(finalTotal);
+    
 }
 
 document.getElementById('calculate-button').addEventListener
