@@ -1,35 +1,37 @@
-
-header{
+header {
     text-align: center;
     margin: 5%;
-    font-family: 'Anton', sans-serif;
-    color: darkgreen;
-
-}
-body{
-    font-family: 'Poppins', sans-serif;
-    color: darkcyan;
-}
-header img {
+    font-family: "Anton", sans-serif;
+    color: rgb(0, 155, 0);
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  header img {
     width: 50px;
     height: 70px;
-}
-
-.img{
+  }
+  span {
+    color: rgb(5, 153, 0);
+  }
+  input {
+    color: rgb(5, 153, 0);
+  }
+  .img {
     position: relative;
     width: 1920px;
     height: 730px;
-}
-.btn{
-    color: rgb(248, 252, 247);
-    background-color: rgba(101, 122, 79, 0.555);
-}
-
-@media only screen and (max-width: 688px) {
-
-    .img{
-        padding-left: 30px;
-        height:300px;
-        width:300px;
+  }
+  .btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(62, 121, 0);
+  }
+  
+  @media only screen and (max-width: 688px) {
+    .img {
+      padding-left: 30px;
+      height: 300px;
+      width: 300px;
     }
-}
+  }
+  

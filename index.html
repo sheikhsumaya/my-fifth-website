@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acclaim  Accounting</title>
+    <title>Acclaim Accounting</title>
+
     <!-- css link  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/7a9c17abb8.js" crossorigin="anonymous"></script>
-     <!-- google font links  -->
+    <!-- google font links  -->
 
-     <!-- header fonts  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-     <!-- body fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- header fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- body fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- header part -->
     <header>
-        <h1>Acclaim  Accounting
+        <h1>Acclaim Accounting
             <img src="images/Screenshot 2022-02-17 120723.png" alt="">
         </h1>
     </header>
@@ -35,58 +40,68 @@
         <section>
             <div class="container d-flex justify-content-center">
                 <div class="row">
-                     <!-- img site  -->
-                  <div class="col-6">
-                  <img class="border-2 img img-fluid" src="images/Mudaraba-Savings-Account_0_1440x850.jpg" alt="">
-                  </div>
-                  <div class="col text-center">
-                    <div class="p-3 border">
-                        <!-- income site  -->
-                     <div>
-                    <h2 class="ps-3">Income</h2>
-                     <p class="ps-3 mt-4">Income :
-                    <input id="income-input" placeholder="$ Enter Income Amount" type="text ms-3"></p>
-                     </div>
-                        <!-- Expenses site  -->
-                        <div>
-                            <h2 class="ps-3">Expenses</h2>
-                             <p class="ps-3 mt-4">Food :
-                            <input  id="food-input" placeholder="$ Enter Food Amount" type="text  ms-3"></p>
-                             <p class="ps-3 mt-4">Rent: 
-                            <input id="rent-input"  placeholder="$ Enter Rent Amount" type="text ms-3"></p>
-                             <p class="ps-3 mt-4"> Clothes: 
-                            <input id="clothes-input"  placeholder="$ Enter Clothes Amount" type="text ms-3"></p>
-                        </div>
-                        <!-- calculate button  -->
-                        <button id="calculate-button" type="button" class="btn">Calculate</button>
-                        <!-- total part  -->
-                        <div>
-                            <h3 class="mt-4">Total Expenses:  $<span id="expenses-total">00</span></h3> 
-                            <h3 class="mt-4">Balance:  $<span id="balance-input">4500</span></h3>
-                        </div>
-                        <!-- saving part  -->
-                        <div class="d-flex flex-row bd-highlight justify-content-center m-1">
-                            <div class="p-2  mt-4 bd-highlight"> <p> Clothes: 
-                                <input placeholder="$ Saving" type="text ms-3"></p></div>
-                            <div class="p-2  mt-4 bd-highlight">
+                    <!-- img site  -->
+                    <div class="col-6">
+                        <img class="border-2 img img-fluid" src="images/Mudaraba-Savings-Account_0_1440x850.jpg" alt="">
+                    </div>
+                    <div class="col text-center">
+                        <div class="p-3 border">
+                            <!-- income site  -->
+                            <div>
+                                <h2 class="ps-3">Income</h2>
+                                <p class="ps-3 mt-4">Income :
+                                    <input id="income-input" placeholder="$ Enter Income Amount" type="text ms-3"
+                                        required>
+                                </p>
+                            </div>
+                            <!-- Expenses site  -->
+                            <div>
+                                <h2 class="ps-3">Expenses</h2>
+                                <p class="ps-3 mt-4">Food :
+                                    <input id="food-input" placeholder="$ Enter Food Amount" type="text  ms-3" required>
+                                </p>
+                                <p class="ps-3 mt-4">Rent:
+                                    <input id="rent-input" placeholder="$ Enter Rent Amount" type="text ms-3" required>
+                                </p>
+                                <p class="ps-3 mt-4"> Clothes:
+                                    <input id="clothes-input" placeholder="$ Enter Clothes Amount" type="text ms-3"
+                                        required>
+                                </p>
+                            </div>
+                            <!-- calculate button  -->
+                            <button id="calculate-button" type="button" class="btn">Calculate</button>
+                            <!-- total part  -->
+                            <div>
+                                <h3 class="mt-4">Total Expenses: $<span id="expenses-total"> 00</span></h3>
+                                <h3 class="mt-4">Balance: $<span id="balance"> 00</span></h3>
+                            </div>
+                            <!-- saving part  -->
+                            <div class="d-flex flex-row bd-highlight justify-content-center m-1">
+                                <div class="p-2  mt-4 bd-highlight">
+                                    <p> Save:
+                                        <input id="saving-input" placeholder="$ Saving" type="text ms-3" required>
+                                    </p>
+                                </div>
+                                <div class="p-2  mt-4 bd-highlight">
                                     %
+                                </div>
+                                <div class="p-2  mt-4 bd-highlight">
+                                    <button id="save-button" type="button" class="btn">Save</button>
+                                </div>
                             </div>
-                            <div class="p-2  mt-4 bd-highlight">
-                                <button type="button" class="btn">Save</button>
+                            <!-- total saving part  -->
+                            <div>
+                                <h3 class="mt-4">Saving Amount: $<span id="saving-amount"> 00</span></h3>
+                                <h3 class="mt-4">Remaining Balance: $<span id="remaining-balance"> 00</span></h3>
                             </div>
-                          </div>
-                        <!-- total saving part  -->
-                        <div>
-                            <h3 class="mt-4">Saving Amount:  $<span> 2000</span></h3> 
-                            <h3 class="mt-4">Remaining Balance:  $<span> 2500</span></h3>
                         </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </section>
     </main>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/banking.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/banking.js"></script>
 </body>
+
 </html>
